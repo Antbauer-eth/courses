@@ -33,12 +33,12 @@
         .rounded-overlay::before {
             border-radius: 0.5rem;
         }
-        .mm-bg { background-image: url('MM_Hintergrund.png'); }
-        .notes-bg { background-image: url('Notes_Hintergrund.jpg'); }
+        .mm-bg { background-image: url('SST1_26/SST1_Hintergrund.png'); }
+        .notes-bg { background-image: url('Notes_Summaries/Notes_Hintergrund.jpg'); }
         .main-bg { background-image: url('Allgemeiner_Hintergrund.jpg'); }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
 
     <div id="main-header" class="relative overflow-hidden bg-cover-overlay main-bg header-section">
         <div class="container mx-auto p-4 sm:p-6 lg:p-8">
@@ -69,7 +69,7 @@
                     <div class="text-center">
                         <h1 class="text-5xl font-extrabold text-white">Signal- und Systemtheorie 1</h1>
                         <p class="mt-4 text-xl text-gray-200">
-                            Ciao, das ist die Website für die Übungsstunde zur Vorlesung Signal- und Systemtheorie 1 (HS2026)
+                            Hallo, das ist die Website für die Übungsstunde zur Vorlesung Signal- und Systemtheorie 1 (HS2026)
                             <br>
                             Bei Fragen melde dich gerne per Mail. Kontakt: antbauer@ethz.ch
                         </p>
@@ -109,7 +109,7 @@
         </div>
     </div>
 
-    <div id="app" class="container mx-auto p-4 sm:p-6 lg:p-8">
+    <div id="app" class="container mx-auto p-4 sm:p-6 lg:p-8 flex-grow">
         
         <div id="home" class="page active">
             <main class="pt-12">
@@ -133,28 +133,16 @@
                     </div>
                 </div>
 
-                <div class="mt-16 pt-8 border-t border-gray-200">
-                    <div class="grid grid-cols-1 md:grid-cols-2">
-                        <div class="flex flex-col items-center text-center p-4 md:border-r md:border-gray-200">
-                           <h3 class="text-2xl font-semibold text-gray-900 mb-4">AMIV</h3>
-                            <a href="https://amiv.ethz.ch/de" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-blue-600 transition-colors">
-                                Events
-                            </a>
-                            <a href="https://exams.amiv.ethz.ch/" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-blue-600 transition-colors">
-                                Prüfungssammlung
-                            </a>
-                        </div>
-            
-                        <div class="flex flex-col items-center text-center p-4 mt-8 md:mt-0 border-t md:border-t-0 pt-8 md:pt-4 border-gray-200">
-                            <h3 class="text-2xl font-semibold text-gray-900 mb-4">Gute Youtube Kanäle</h3>
-                            <ul class="space-y-2">
-                                <li>
-                                    <a href="https://www.youtube.com/@electricalengineeringforet6683" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline transition-colors">
-                                        EE4ETH
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                <!-- Zentrierter AMIV Bereich -->
+                <div class="mt-16 pt-8 border-t border-gray-200 flex justify-center">
+                    <div class="flex flex-col items-center text-center p-4">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">AMIV</h3>
+                        <a href="https://amiv.ethz.ch/de" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-blue-600 transition-colors mb-2">
+                            Events
+                        </a>
+                        <a href="https://exams.amiv.ethz.ch/" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-blue-600 transition-colors">
+                            Prüfungssammlung
+                        </a>
                     </div>
                 </div>
             </main>
@@ -181,14 +169,30 @@
                 <div class="mt-12 border-t pt-8">
                     <h3 class="text-xl font-bold text-center mb-6 text-gray-800">Class Material</h3>
                     <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
-                        <a href="./SST1_formeln.pdf" download="SST1-Formeln.pdf" class="inline-block bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300 shadow-md hover:shadow-lg">
+                        <a href="./SST1_26/Vorlesungsunterlagen/SST1_formeln.pdf" download="SST1_Formeln.pdf" class="inline-block bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300 shadow-md hover:shadow-lg">
                           Formelsammlung
                         </a>
-                        <a href="./SST1-Vorlesung.pdf" download="SST1-Vorlesung.pdf" target="_blank" rel="noopener noreferrer" class="inline-block bg-gray-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-gray-700 transition-colors duration-300 shadow-md hover:shadow-lg">
+                        <a href="./SST1_26/Vorlesungsunterlagen/SST1_Vorlesung.pdf" download="SST1_Vorlesung.pdf" target="_blank" rel="noopener noreferrer" class="inline-block bg-gray-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-gray-700 transition-colors duration-300 shadow-md hover:shadow-lg">
                             Skript
                         </a>
-                        <a href="./SST1-Uebung.pdf" download="SST1-Uebung.pdf" target="_blank" rel="noopener noreferrer" class="inline-block bg-gray-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-gray-700 transition-colors duration-300 shadow-md hover:shadow-lg" >
+                        <a href="./SST1_26/Vorlesungsunterlagen/SST1_Uebung.pdf" download="SST1_Uebung.pdf" target="_blank" rel="noopener noreferrer" class="inline-block bg-gray-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-gray-700 transition-colors duration-300 shadow-md hover:shadow-lg" >
                             Übungen
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Exklusive YouTube Kurse Sektion nur auf der SST1 Seite -->
+                <div class="mt-12 border-t pt-8">
+                    <h3 class="text-xl font-bold text-center mb-6 text-gray-800">Youtube Courses</h3>
+                    <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                        <a href="https://www.youtube.com/watch?v=-FHm2pQmiSM&list=PLUl4u3cNGP61kdPAOC7CzFjJZ8f1eMUxs" target="_blank" rel="noopener noreferrer" class="inline-block bg-red-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-red-700 transition-colors duration-300 shadow-md hover:shadow-lg">
+                            MIT OpenCourseWare
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=s8rsR_TStaA&list=PLBlnK6fEyqRhG6s3jYIU48CqsT5cyiDTO" target="_blank" rel="noopener noreferrer" class="inline-block bg-red-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-red-700 transition-colors duration-300 shadow-md hover:shadow-lg">
+                            Neso Academy
+                        </a>
+                        <a href="https://www.youtube.com/@electricalengineeringforet6683" target="_blank" rel="noopener noreferrer" class="inline-block bg-red-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-red-700 transition-colors duration-300 shadow-md hover:shadow-lg">
+                            EE4ETH
                         </a>
                     </div>
                 </div>
@@ -290,18 +294,34 @@
         document.addEventListener('DOMContentLoaded', () => {
             const tableBody = document.getElementById('table-body');
             if(tableBody) {
+                const weeksData = [
+                    { woche: 1, material: '-', aufgaben: '-', thema: '-' },
+                    { woche: 2, material: '-', aufgaben: '-', thema: '-' },
+                    { woche: 3, material: '-', aufgaben: '-', thema: '-' },
+                    { woche: 4, material: '-', aufgaben: '-', thema: '-' },
+                    { woche: 5, material: '-', aufgaben: '-', thema: '-' },
+                    { woche: 6, material: '-', aufgaben: '-', thema: '-' },
+                    { woche: 7, material: '-', aufgaben: '-', thema: '-' },
+                    { woche: 8, material: '-', aufgaben: '-', thema: '-' },
+                    { woche: 9, material: '-', aufgaben: '-', thema: '-' },
+                    { woche: 10, material: '-', aufgaben: '-', thema: '-' },
+                    { woche: 11, material: '-', aufgaben: '-', thema: '-' },
+                    { woche: 12, material: '-', aufgaben: '-', thema: '-' },
+                    { woche: 13, material: '-', aufgaben: '-', thema: '-' }
+                ];
+
                 let tableContent = '';
-                for (let i = 1; i <= 13; i++) {
-                    const rowClass = i % 2 === 0 ? 'bg-gray-50' : 'bg-white';
+                weeksData.forEach((data, index) => {
+                    const rowClass = index % 2 !== 0 ? 'bg-gray-50' : 'bg-white';
                     tableContent += `
                         <tr class="${rowClass}">
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Woche ${i}</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">-</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Woche ${data.woche}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${data.material}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${data.aufgaben}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${data.thema}</td>
                         </tr>
                     `;
-                }
+                });
                 tableBody.innerHTML = tableContent;
             }
             
