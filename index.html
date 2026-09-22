@@ -156,7 +156,8 @@
                         <thead class="bg-gray-100">
                             <tr>
                                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Woche</th>
-                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Material der Übungsstunde</th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Skript</th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Solutions</th>
                                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Aufgaben</th>
                                 <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Thema</th>
                             </tr>
@@ -295,19 +296,25 @@
             const tableBody = document.getElementById('table-body');
             if(tableBody) {
                 const weeksData = [
-                    { woche: 1, material: '-', aufgaben: '-', thema: '-' },
-                    { woche: 2, material: '-', aufgaben: '-', thema: '-' },
-                    { woche: 3, material: '-', aufgaben: '-', thema: '-' },
-                    { woche: 4, material: '-', aufgaben: '-', thema: '-' },
-                    { woche: 5, material: '-', aufgaben: '-', thema: '-' },
-                    { woche: 6, material: '-', aufgaben: '-', thema: '-' },
-                    { woche: 7, material: '-', aufgaben: '-', thema: '-' },
-                    { woche: 8, material: '-', aufgaben: '-', thema: '-' },
-                    { woche: 9, material: '-', aufgaben: '-', thema: '-' },
-                    { woche: 10, material: '-', aufgaben: '-', thema: '-' },
-                    { woche: 11, material: '-', aufgaben: '-', thema: '-' },
-                    { woche: 12, material: '-', aufgaben: '-', thema: '-' },
-                    { woche: 13, material: '-', aufgaben: '-', thema: '-' }
+                    { 
+                        woche: 1, 
+                        skript: `<a href="./SST1_26/Folien/Ü1.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-medium">Ü1.pdf</a>`, 
+                        solutions: '-', 
+                        aufgaben: '1 bis 14', 
+                        thema: 'Einteilung der Signale, Lineare Räume' 
+                    },
+                    { woche: 2, skript: '-', solutions: '-', aufgaben: '-', thema: '-' },
+                    { woche: 3, skript: '-', solutions: '-', aufgaben: '-', thema: '-' },
+                    { woche: 4, skript: '-', solutions: '-', aufgaben: '-', thema: '-' },
+                    { woche: 5, skript: '-', solutions: '-', aufgaben: '-', thema: '-' },
+                    { woche: 6, skript: '-', solutions: '-', aufgaben: '-', thema: '-' },
+                    { woche: 7, skript: '-', solutions: '-', aufgaben: '-', thema: '-' },
+                    { woche: 8, skript: '-', solutions: '-', aufgaben: '-', thema: '-' },
+                    { woche: 9, skript: '-', solutions: '-', aufgaben: '-', thema: '-' },
+                    { woche: 10, skript: '-', solutions: '-', aufgaben: '-', thema: '-' },
+                    { woche: 11, skript: '-', solutions: '-', aufgaben: '-', thema: '-' },
+                    { woche: 12, skript: '-', solutions: '-', aufgaben: '-', thema: '-' },
+                    { woche: 13, skript: '-', solutions: '-', aufgaben: '-', thema: '-' }
                 ];
 
                 let tableContent = '';
@@ -316,7 +323,8 @@
                     tableContent += `
                         <tr class="${rowClass}">
                             <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Woche ${data.woche}</td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${data.material}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${data.skript}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${data.solutions}</td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${data.aufgaben}</td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${data.thema}</td>
                         </tr>
